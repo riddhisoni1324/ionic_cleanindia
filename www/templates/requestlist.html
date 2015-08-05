@@ -1,0 +1,12 @@
+<ion-view>
+  <ion-content>
+    <div class="list" ng-repeat="request in requests" ng-click="navigation(request.id)">
+      <a class="item item-thumbnail-left" href="">
+        <img>
+        <h2 ng-bind="request.address"></h2>
+        Date: <label ng-bind="request.created"></label>
+        Status: <label ng-bind="request.status"></label>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

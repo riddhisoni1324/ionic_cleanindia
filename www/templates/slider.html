@@ -1,0 +1,35 @@
+<ion-modal-view class="slidescreen">
+
+      
+ <ion-content scroll="false">
+        <ion-slide-box show-pager="true" on-slide-changed="onSlideChanged($index)">
+          <ion-slide ng-repeat="slide in slides">
+            <div class="box slidetext" align="center">
+                 <img ng-src="{{slide.image}}"/>
+                <p>{{slide.title}}</p>
+                <p>{{slide.desc}}                 lorem ipsum dolor sit consectetur</p>
+              <span ng-if="$index===0" >
+                    <button class="button button-clear   closebutton" ng-click="closePopover()">
+                    <i class="icon ion-close colsesize"></i>
+                    </button>                    
+
+                </span>  
+              
+
+                <div class="swipetext">
+                     Swipe to learn more                  
+                </div>
+                  
+                <br><br><br><br><br><br><br>
+            </div>
+          </ion-slide>
+        </ion-slide-box>    
+      </ion-content>  
+      
+
+</ion-modal-view>
+
+
+
+
+
